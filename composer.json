@@ -1,0 +1,31 @@
+{
+    "name": "okwinza/monolog-masking-formatter",
+    "description": "Masking sensitive data",
+    "type": "library",
+    "require": {
+        "php": "^7.3",
+        "monolog/monolog": "^2.0",
+        "symfony/property-access": "^4.0|^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Okwinza",
+            "email": "okwinza@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Okw\\MonologMaskingFormatter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Okw\\MonologMaskingFormatter\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
