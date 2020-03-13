@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Okw\MonologMaskingFormatter;
+namespace ConfigOne\MonologMaskingFormatter;
 
 trait MaskingTrait
 {

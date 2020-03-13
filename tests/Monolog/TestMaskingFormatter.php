@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Okw\MonologMaskingFormatter\Tests\Monolog;
+namespace ConfigOne\MonologMaskingFormatter\Tests\Monolog;
 
-use Okw\MonologMaskingFormatter\MaskingTrait;
+use ConfigOne\MonologMaskingFormatter\MaskingTrait;
 
 class TestMaskingFormatter
 {

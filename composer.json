@@ -1,9 +1,10 @@
 {
-    "name": "okwinza/monolog-masking-formatter",
+    "name": "ConfigOneinza/monolog-masking-formatter",
     "description": "Masking sensitive data",
     "type": "library",
     "require": {
         "php": "^7.3",
+        "ext-json": "*",
         "monolog/monolog": "^1.20|^2.0",
         "symfony/property-access": "^4.0|^5.0"
     },
@@ -13,18 +14,18 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Okwinza",
-            "email": "okwinza@gmail.com"
+            "name": "ConfigOneinza",
+            "email": "ConfigOneinza@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Okw\\MonologMaskingFormatter\\": "src/"
+            "ConfigOne\\MonologMaskingFormatter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Okw\\MonologMaskingFormatter\\Tests\\": "tests/"
+            "ConfigOne\\MonologMaskingFormatter\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable"

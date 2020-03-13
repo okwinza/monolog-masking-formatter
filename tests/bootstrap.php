@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Okw\MonologMaskingFormatter\Tests;
+namespace ConfigOne\MonologMaskingFormatter\Tests;
 
 date_default_timezone_set('UTC');
 

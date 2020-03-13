@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Okw\MonologMaskingFormatter\Tests;
+namespace ConfigOne\MonologMaskingFormatter\Tests;
 
-use Okw\MonologMaskingFormatter\Tests\Monolog\TestMaskingFormatter;
+use ConfigOne\MonologMaskingFormatter\Tests\Monolog\TestMaskingFormatter;
 use PHPUnit\Framework\TestCase;
 
 class MaskingFormatterTest extends TestCase
