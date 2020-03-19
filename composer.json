@@ -1,5 +1,5 @@
 {
-    "name": "configone/monolog-masking-formatter",
+    "name": "configone/masking-monolog-formatter",
     "description": "Masking sensitive data",
     "type": "library",
     "require": {
