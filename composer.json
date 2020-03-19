@@ -1,5 +1,5 @@
 {
-    "name": "ConfigOneinza/monolog-masking-formatter",
+    "name": "configone/monolog-masking-formatter",
     "description": "Masking sensitive data",
     "type": "library",
     "require": {
