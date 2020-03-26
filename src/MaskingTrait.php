@@ -37,7 +37,7 @@ trait MaskingTrait
         $this->mask = $mask;
     }
 
-    protected function maskRecord(array $record) {
+    protected function maskRecord($record) {
 
         foreach ($record as $key => &$value) {
             if (is_array($value)) {
