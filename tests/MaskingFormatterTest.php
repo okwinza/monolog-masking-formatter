@@ -65,4 +65,28 @@ class MaskingFormatterTest extends TestCase
         $this->assertEquals($object->foo, $result['object']['foo']);
         $this->assertEquals($record['some'], $result['some']);
     }
+
+    public function testJsonSerializableString()
+    {
+        $object = new class implements \JsonSerializable {
+            public $foo = 'bar';
+
+            public function jsonSerialize()
+            {
+                return $this->foo;
+            }
+        };
+
+        $record = [
+            'some' => 'value',
+            'email' => 'sensitive',
+            'object' => $object
+        ];
+
+        $result = $this->formatter->format($record);
+
+        $this->assertEquals($object->foo, $result['object']);
+        $this->assertEquals($this->formatter->getMask(), $result['email']);
+        $this->assertEquals($record['some'], $result['some']);
+    }
 }

@@ -39,6 +39,10 @@ trait MaskingTrait
 
     protected function maskRecord($record) {
 
+        if (!is_array($record)) {
+            return $record;
+        }
+
         foreach ($record as $key => &$value) {
             if (is_array($value)) {
                 $value = $this->maskRecord($value);
